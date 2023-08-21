@@ -1,0 +1,204 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;300;400;500;600;700;800&display=swap');
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Raleway', sans-serif;
+}
+
+body{
+  background-color: #222831;
+}
+
+nav{
+  display: flex;
+  justify-content: center;
+  margin: 10px auto;
+  width: 100%;
+  position: fixed;
+}
+
+nav ul{
+  background-color: #DDDDDD;
+  display: flex;
+  list-style: none;
+  text-align: center;
+  padding: 7px 70px;
+  border-radius: 100px;
+  gap: 6rem;
+
+}
+
+nav ul li a{
+  text-decoration: none;
+  color: black;
+}
+
+.btn-group ul li a:hover{
+  color: rgb(255, 162, 0);
+  transition: all .15s ease-in-out;
+}
+
+.article-home{
+  color: #DDDDDD;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+  padding: 12%;
+  gap: 1rem;
+}
+
+.home-img{
+  height: 350px;
+}
+
+.home-items{
+  width: 50%;
+}
+
+.home-items p{
+  margin-top: 10px;
+}
+
+.article-profile{
+  display: flex;
+  margin: auto;
+  padding: 15%;
+  align-items: center;
+  gap: 2rem;
+  background-color: #ddddddc5;
+  color: #222831;
+  border-radius: 25px;
+  justify-content: center;
+}
+
+.profile-items{
+  width: 550px;
+  display: flex;
+  flex-direction: column;
+}
+
+.enter{
+  display: flex;
+  padding: 8px 0px 0px 0px;
+}
+
+h1{
+  font-size: 30px;
+}
+
+.article-box{
+  display: flex;
+  flex-direction: column;
+  padding: 10%;
+}
+
+.skill-title{
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  color: #DDDDDD;
+}
+
+.skill-content{
+  display: flex;
+  justify-content: center;
+  border: #DDDDDD;
+  margin: auto;
+  border-radius: 5px;
+}
+
+.skill-box{
+  display: flex;
+  justify-content: center;
+  margin: 15px;
+  border-radius: 50px;
+}
+
+.skill-content div{
+  width: 20%;
+  overflow: hidden;
+  border-radius: 10px;
+}
+
+.skill-content div img{
+  object-fit: cover;
+  height: 100%;
+  width: 100%;
+  transition: 0.3s ease;
+}
+.skill-content div:hover img{
+  transform: scale(1.2);
+}
+
+footer{
+  background-color: #DDDDDD;
+  display: flex;
+  justify-content: space-between;
+  padding: 12px 25px;
+}
+
+@media screen and (max-width: 500px) {
+  .article-home{
+    padding: 30% 5%;
+  }
+
+  .article-home figure img{
+    width: 200px;
+    height: 200px;
+  }
+  
+  .skill-content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: #DDDDDD;
+    border-radius: 5px;
+  }
+
+  .skill-content div{
+    display: flex;
+    width: 60%;
+    justify-content: center;
+  }
+
+  .home-items{
+    width: 60%;
+  }
+
+  .article-profile{
+    flex-direction: column;
+    padding: 10%;
+    border-radius: 20px;
+  }
+
+  .profile-items{
+    padding: 0% 10%;
+  }
+
+  .article-profile figure img{
+    width: 220px;
+    height: 220px;
+    padding: 0px;
+  }
+
+  .profile-items{
+    padding: 0px 100px;
+  }
+
+  nav{
+    display: none;
+  }
+
+}
+
+
+
+
+
+
